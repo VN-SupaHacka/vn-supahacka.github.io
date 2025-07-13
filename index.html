@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--- favicons -->
+    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/scripts/info.js" defer></script>
+    <script src="/scripts/snowstorm.js"></script>
+    <script src="/scripts/main_page.js" defer></script>
+    <title>VN SupaHacka</title>
+</head>
+<body>
+    <main style=>
+        <audio id="main_audio" controls style="visibility: hidden;height: 0px;">
+            <source src="/sound/all_or_none.ogg" type="audio/ogg">
+        </audio>
+        <img src="/img/sphia.avif" class="fullscreen"></img>
+        <div class="column-center" style="height:100vh">
+            <div class="row">
+                    <img id="svg-logo" src="/svg/vn-logo.svg"></img>
+                    <span class="nav-title">SupaHacka</span>
+            </div>
+            <ul class="row" style="padding-left: 0px;">
+                <li class="unset">
+                    <button id="toggle-sound"></button>
+                </li>
+                <li class="unset">
+                    <a title="Servidor do discord" id="link-discord" class="img-anchor">
+                        <img id="svg-discord" src="/svg/discord.svg"></img>
+                    </a>
+                </li>
+                <li class="unset">
+                    <a title="Repositório do Github" id="link-github">
+                        <img id="svg-github" src="/svg/github.svg"></img>
+                    </a>
+                </li>
+                <li class="unset">
+                    <a title="Página do VNDB" id="link-vndb">
+                        <img id="svg-vndb" src="/svg/vndb.svg"></img>
+                    </a>
+                </li>
+                <li class="unset"><a class="nav-anchor" href="/projects">Projetos</a></li>
+                <li class="unset"><a class="nav-anchor" href="/about">Sobre</a></li>
+            </ul>
+        </div>
+    </main>        
+</body>
+</html>
