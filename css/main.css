@@ -256,7 +256,6 @@ button.patch-download {
     
 }
 
-
 a img.project-logo:hover {
     transform: scale(1.05);
 }
@@ -293,6 +292,10 @@ footer p {
     vertical-align: middle;
     margin-bottom:4px;
     margin-right: 16px;
+}
+
+#toggle-sound:hover {
+    cursor: pointer;
 }
 
 #svg-discord, #svg-github, #svg-vndb {
