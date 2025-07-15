@@ -1,7 +1,7 @@
 const links = {
     discord:"https://discord.gg/2WVEKyz4sa",
     github:"https://github.com/VN-SupaHacka/vn-supahacka.github.io",
-    vndb:null
+    vndb:"https://vndb.org/p25398"
 };
 
 for(entry in links) {

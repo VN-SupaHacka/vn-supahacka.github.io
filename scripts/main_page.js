@@ -2,7 +2,12 @@ const audioPlayer = document.getElementById("main_audio");
 const audioButton = document.getElementById("toggle-sound");
 let isPlaying = false;
 
-const updateAudioBtn = () => audioButton.innerText = isPlaying ? "⏹" : "▶";
+function updateAudioBtn()
+{
+    audioButton.innerText = isPlaying ? "⏹" : "▶";
+    audioButton.title = isPlaying ? "Parar Música" : "Iniciar Música";
+}
+
 function onSoundToggle(event)
 {
     if(isPlaying)
