@@ -30,6 +30,7 @@ a:hover {
 
 footer {
     margin-top: 32px;
+    margin-bottom: 16px;
 }
 
 figure {
@@ -123,6 +124,16 @@ figcaption {
     background-color: #2A2A2A;
 }
 
+.main-card {
+    margin: 20px auto;
+    max-width:min(1080px, 80%);
+    border-radius: 10px;
+    background-color: #2A2A2A;
+
+    gap: 30px;
+    padding: 48px;
+}
+
 .limit-size  {
     max-width: 100%;
     max-height: 100%;
@@ -157,7 +168,7 @@ nav {
 }
 
 #svg-logo {
-    height:56px;
+    height:50px;
     margin-right:8px;
 }
 
