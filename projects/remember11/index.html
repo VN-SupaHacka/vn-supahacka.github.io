@@ -8,8 +8,10 @@
 	<link rel="shortcut icon" href="/favicons/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
 	<link rel="manifest" href="/site.webmanifest" />
+	
 	<link rel="stylesheet" href="/css/main.css">
 	<script src="/scripts/info.js" defer></script>
+	<script src="/scripts/release-tab.js"></script>
 	<title>VN SupaHacka</title>
 </head>
 <body>
@@ -31,6 +33,15 @@
 				<h1 class="project-title">Remember11</h1>
 				<p>Fuyukawa Kokoro, uma estudante do terceiro ano de Sociologia, embarca em um avião com destino a Hokkaido para se encontrar com uma paciente do Hospital Psiquiátrico para Isolamento e Proteção, abreviado pelo seu nome em inglês como SPHIA. Por motivos desconhecidos, seu avião se acidenta, caindo nas montanhas no meio de uma nevasca. Dos 31 passageiros, apenas ela, Kusuda Yuni, Yomogi Seiji, e Mayuzumi Lin sobrevivem sem ferimentos. Incapazes de entrar em contato com o mundo externo devido a forte nevasca, os quatro decidem se abrigar numa cabana vazia e esperar até que a tempestade passe.</p>
 				<p>Yukidoh Satoru, cai da torre do relógio em SPHIA. Ele posteriormente acorda sem memórias, percebendo que alguém está atrás de sua vida. Incapaz de deixar SPHIA devido a nevasca, sua única chance de sobreviver é descobrir quem entre os outros três residentes (ou talvez um agressor escondido) em SPHIA quer matá-lo.</p>
+				<div class="gtk-tab-bar" role="tablist">
+					<button id="release-btn-windows" class="gtk-tab-btn active" role="tab" aria-selected="true">
+						<img src="/img/windows.webp" style="height: 24px;"> Windows
+					</button>
+					<button id="release-btn-psp" class="gtk-tab-btn" role="tab" aria-selected="false">
+						<img src="/img/playstation.webp" style="height: 24px;"> PSP
+					</button>
+				</div>
+				<release-tab name="windows" default>
 				<h2>Instruções para instalação do patch</h2>
 				<ol type="1">
 					<li>Instale o patch de tradução da versão <a href="https://www.reddit.com/r/InfinitySeries/comments/mbk11z/remember11_gestalt_edition_repost/">Gestalt</a> (versão melhorada com a tradução do japonês para o inglês, na qual nosso patch foi baseada)</li>
@@ -41,20 +52,44 @@
 				</ol>
 				<h2>O patch contém:</h2>
 				<ul>
-					<li>Tradução completa do script revisada;</li>
-					<li>Tradução do glossário e títulos dos capítulos;</li>
-					<li>Tradução parcial de alguns menus;</li>
-					<li>Inclusão de acentuações que não estavam presentes na fonte original;</li>
-					<li>Mudança do formato de horário 12h AM/PM para 24h no relógio digital que aparece em algumas cenas;</li>
+					<li>Tradução completa do script revisada</li>
+					<li>Tradução do glossário e títulos dos capítulos</li>
+					<li>Tradução parcial de alguns menus</li>
+					<li>Inclusão de acentuações que não estavam presentes na fonte original</li>
+					<li>Mudança do formato de horário 12h AM/PM para 24h no relógio digital que aparece em algumas cenas</li>
 				</ul>
 				<h2>O patch não contém:</h2>
 				<ul>
-					<li>Tradução das letras das músicas de abertura e encerramento na galeria;</li>
-					<li>Tradução dos nomes dos finais;</li>
-					<li>Tradução dos textos em imagens e vídeos;</li>
-					<li>Tradução completa dos menus;</li>
-					<li>Port da tradução para a versão de PSP;</li>
+					<li>Tradução das letras das músicas de abertura e encerramento na galeria</li>
+					<li>Tradução dos nomes dos finais</li>
+					<li>Tradução dos textos em imagens e vídeos</li>
+					<li>Tradução completa dos menus</li>
 				</ul>
+				</release-tab>
+				<release-tab name="psp">
+					<h2>Instruções para instalação do patch</h2>
+					<ol type="1">
+					<li>Tenha em mãos a ISO original japonesa do Remember11</li>
+					<li>Baixe o nosso patch, para <a download href="/projects/remember11/r11_psp_win32_patch_v1.zip"><b>Windows</b></a> ou <a download href="/projects/remember11/r11_psp_linux_patch_v1.zip"><b>Linux</b></a></li>
+					<li>Extraia o arquivo zip, entre na pasta extraida e coloque o arquivo ISO na pasta com o nome "Remember11-jap.iso"</li>
+					<li>Execute o arquivo de script <b>Remember11-patch.bat</b> no Windows e <b>make.sh</b> no Linux, um novo arquivo com a ISO traduzida será gerado</li>
+					<li>Para jogar, utilize o emulador <a href="https://www.ppsspp.org/"><b>PPSSPP</b></a> ou um PSP original</li>
+					</ol>
+					<h2>O patch contém:</h2>
+					<ul>
+						<li>Tradução completa do script revisada</li>
+						<li>Tradução do glossário e títulos dos capítulos</li>
+						<li>Tradução parcial de alguns menus</li>
+						<li>Inclusão de acentuações que não estavam presentes na fonte original</li>
+					</ul>
+					<h2>O patch não contém:</h2>
+					<ul>
+						<li>Tradução das letras das músicas de abertura e encerramento na galeria</li>
+						<li>Tradução dos textos em imagens e vídeos</li>
+						<li>Tradução completa dos menus</li>
+					</ul>
+				</release-tab>
+			
 			</div>
 			<div class="row-center">
 				<img class="project-grid-logo" src="/project-logo/remember11.avif"></img>

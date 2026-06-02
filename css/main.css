@@ -231,6 +231,9 @@ main h1{
 main h2{
     color:#c8c8c8;
 }
+main h3 {
+    color:#a8a8a8;
+}
 
 main p {
     color: #909090;
@@ -309,6 +312,7 @@ footer p {
     cursor: pointer;
 }
 
+
 #svg-discord, #svg-github, #svg-vndb {
     height: 30px;
     width: 30px;
@@ -323,5 +327,45 @@ footer p {
     filter: invert(47%) sepia(86%) saturate(4284%) hue-rotate(220deg) brightness(95%) contrast(102%);
 }
 
+.gtk-tab-bar {
+  display: inline-flex;       /* Keeps the bar tight around the buttons */
+  background-color: #2e2e2e;  /* Dark GTK-like background */
+  padding: 3px;               /* Subtle padding around the button group */
+  border-radius: 8px;         /* Outer rounded corners for the whole bar */
+  border: 1px solid #1a1a1a;
+}
+
+/* Base style for all buttons in the bar */
+.gtk-tab-btn {
+  background: transparent;
+  color: #e0e0e0;
+  border: none;
+  padding: 6px 16px;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;                   /* Gap between icon and text */
+  border-radius: 6px;         /* Individual buttons retain a slight roundness */
+  transition: background 0.2s;
+}
+
+.gtk-tab-btn:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.gtk-tab-btn.active {
+  background-color: #3f3f3f;  /* Lighter raised background */
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Subtle depth */
+}
+
+/* Icon sizing framework */
+.icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
 
 
