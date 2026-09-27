@@ -1,1 +1,5 @@
 *.svg binary
+*.html eol=lf
+*.js eol=lf
+*.css eol=lf
+*.webmanifest eol=lf
